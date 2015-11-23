@@ -21,12 +21,12 @@ If the `filename` parameter is missing the program has to read from the standard
 
 The algorithm is very simple and it's divided into some phases:
  1. Capitalize everything
- 2. Swap some letters
+ 2. Swap some letters (max 2 per word)
     1. A pair of adjacent letters will be swapped with a probability of `20%`
     2. No more than 2 swaps per word
- 3. Remove some letters
+ 3. Remove some letters (20% of the word at most)
     1. Remove a letter with a probability of 5% if it is a vocal
-    2. 20% if it's a consonant
+    2. 10% if it's a consonant
     3. 40% if it's a double letter
  4. Add to the end of the line some `H!?`
     1. With a probability of 30%
